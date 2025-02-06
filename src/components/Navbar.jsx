@@ -52,7 +52,7 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full bg-background py-4 z-50 shadow-md">
             <div className="container mx-auto flex justify-between items-center px-6">
                 {/* Logo */}
-                <Link href="#home">
+                <Link href="/">
                     <div className="flex items-center space-x-2 cursor-pointer">
                         <Image src="/assets/logo of my website.png" width={50} height={40} alt="Logo" />
                         <div className="text-primary text-2xl font-bold">
@@ -97,9 +97,11 @@ const Navbar = () => {
                 {/* Dark Mode Toggle & Resume Button */}
                 <div className="hidden md:flex items-center space-x-4">
                     <ModeToggle />
-                    <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                        Resume
+                    
+                    <a href="https://drive.google.com/uc?export=download&id=1JAK_hvkFa2McIiWTCTmbrIBLPMh_UVzn" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
+                         Resume
                     </a>
+
                 </div>
             </div>
 
@@ -127,12 +129,12 @@ const Navbar = () => {
                                     key={section.id}
                                     href={`#${section.id}`}
                                     onClick={(e) => {
-                                        e.preventDefault(); // Prevent default anchor behavior
+                                        e.preventDefault(); 
                                         const element = document.getElementById(section.id);
                                         if (element) {
                                             window.scrollTo({
-                                                top: element.offsetTop - 80, // Adjust offset to avoid navbar overlap
-                                                behavior: "smooth", // Smooth scrolling effect
+                                                top: element.offsetTop - 80, 
+                                                behavior: "smooth", 
                                             });
                                         }
                                         toggleMenu();
@@ -145,9 +147,11 @@ const Navbar = () => {
                             ))}
                             <div className="flex items-center space-x-4">
                                 <ModeToggle />
-                                <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                                    Resume
+    
+                                <a href="https://drive.google.com/uc?export=download&id=1JAK_hvkFa2McIiWTCTmbrIBLPMh_UVzn" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
+                                 Resume
                                 </a>
+
                             </div>
                         </div>
                     </motion.div>

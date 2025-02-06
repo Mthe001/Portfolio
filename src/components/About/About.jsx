@@ -68,7 +68,7 @@ const About = () => {
     };
 
     return (
-        <section id="about" className="about w-full py-16 md:py-24 lg:py-32 bg-background">
+        <section id="about" className="about min-h-screen w-full py-16 md:py-24 lg:py-32 bg-background">
             <div className="container mx-auto px-6 lg:px-12 text-center">
                 {/* Section Title */}
                 <motion.h2
@@ -95,8 +95,8 @@ const About = () => {
                         <TextAnimate animation="slideLeft" by="character">I'm a passionate</TextAnimate>
                             <TextAnimate className='text-primary' animation="slideLeft" by="character">Frontend Developer</TextAnimate>
                     </div>
-                    <TextAnimate animation="slideUp" by="character">
-                        who loves solving problems, building scalable web applications, and crafting engaging experiences.
+                    <TextAnimate animation="slideLeft" by="character">
+                        who loves solving problems, building scalable web applications, and crafting engage experiences.
                     </TextAnimate>
                 </motion.p>
 
@@ -120,13 +120,13 @@ const About = () => {
                     <motion.div
                         className="mt-6 md:mt-0 md:ml-8 text-center md:text-left max-w-lg"
                     >
-                        <h3 className="text-2xl font-bold text-primary">MD Redwanul Haque</h3>
-                        <p className="mt-2 text-muted-foreground text-lg">
+                        <h3 className="lg:text-2xl md:text-xl text-md text-start font-bold text-primary">MD Redwanul Haque</h3>
+                        <p className="mt-2 text-muted-foreground text-sm text-start  lg:text-lg">
                             I am currently a first-year intermediate student, passionate about technology and development.
                             After taking a brief gap year due to personal reasons, I am now fully committed to my learning journey.
                             I completed my SSC in 2023 from <span className="text-primary">Science</span>, achieving a GPA of 5.
                         </p>
-                        <TextAnimate className="mt-2 text-muted-foreground text-lg" animation="slideLeft" by="character">
+                        <TextAnimate className="mt-2  text-muted-foreground text-sm text-start lg:text-lg" animation="slideLeft" by="character">
                             My inspiration for coding comes from a close brother of mine, whose incredible work in development sparked my curiosity.
                             Watching his approach to problem-solving and creativity inspired me to step into the world of programming, marking the beginning of my journey as a developer.
                         </TextAnimate>
@@ -187,7 +187,7 @@ const About = () => {
                 {/* Tech Stack */}
                 <motion.div
                     id="skills"
-                    className="lg:mt-40 md:mt-28 mt-20"
+                    className="lg:mt-40 md:mt-28 mt-20 min-h-screen"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}

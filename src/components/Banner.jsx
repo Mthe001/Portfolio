@@ -9,14 +9,40 @@ import { IconCloud } from "./ui/icon-cloud";
 import { Particles } from "./ui/particles";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 const Banner = () => {
     const slugs = [
-        "typescript", "javascript", "dart", "java", "react", "flutter",
-        "android", "html5", , "nodedotjs", "express", "nextdotjs",
-        "prisma", , "postgresql", "firebase",
-        "vercel", "testinglibrary", "jest",  "docker",
-        "git",  "github", "gitlab", "visualstudiocode",
+        "typescript",
+        "javascript",
+        "dart",
+        "java",
+        "react",
+        "flutter",
+        "android",
+        "html5",
+        "css3",
+        "nodedotjs",
+        "express",
+        "nextdotjs",
+        "prisma",
+        "amazonaws",
+        "postgresql",
+        "firebase",
+        "nginx",
+        "vercel",
+        "testinglibrary",
+        "jest",
+        "cypress",
+        "docker",
+        "git",
+        "jira",
+        "github",
+        "gitlab",
+        "visualstudiocode",
+        "androidstudio",
+        "sonarqube",
+        "figma",
     ];
 
     const images = slugs.map(
@@ -55,16 +81,16 @@ const Banner = () => {
 
                 {/* Right Side: 3D Icon Cloud (Appears below title on mobile) */}
                 <motion.div
-                    className="w-full lg:w-1/2 flex justify-center"
+                    className="w-full lg:w-auto flex justify-center"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <IconCloud images={images} />
+                    <IconCloud  images={images} />
                 </motion.div>
 
                 {/* Left Side: Text & Buttons */}
-                <div className="w-full lg:w-1/2 text-center lg:text-left relative z-10">
+                <div className="w-full lg:w-11/12 text-center lg:text-left relative z-10">
                     {/* Animated Shiny Text */}
                     <motion.div
                         className="mb-4 flex justify-center lg:justify-start"
@@ -107,33 +133,37 @@ const Banner = () => {
                         transition={{ delay: 0.4, duration: 0.6 }}
                     >
 
-                        {/* Replace Buttons with Next.js Links */}
-                        <div className="flex justify-center gap-4 mt-6">
-                            <Link href="/contact" passHref>
+                        <div className="flex flex-wrap justify-center gap-4 mt-6">
+                            {/* Let's Connect Button - Links to #contact */}
+                            <Link href="#contact" passHref>
                                 <motion.a
-                                    className="px-6 py-3 text-lg bg-primary text-white rounded-lg shadow-md hover:bg-primary/90 transition"
+                                    className="w-full md:w-auto px-6 py-3 text-lg bg-primary text-white rounded-lg shadow-md hover:bg-primary/90 transition text-center"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 20 }}
                                     transition={{ delay: 0.3, duration: 0.6 }}
-                                    aria-label="Contact Page"
+                                    aria-label="Contact Section"
                                 >
                                     Let's Connect
                                 </motion.a>
                             </Link>
 
-                            <Link href="/projects" passHref>
+                            {/* Visit GitHub Button with GitHub Icon */}
+                            <Link href="https://github.com/Mthe001" passHref> {/* Replace 'yourusername' with your GitHub username */}
                                 <motion.a
-                                    className="px-6 py-3 text-lg border border-primary text-primary rounded-lg shadow-md hover:bg-primary/10 transition"
+                                    className="w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 text-lg border border-primary text-primary rounded-full shadow-md hover:bg-primary/10 transition text-center"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 20 }}
-                                    transition={{ delay: 0.4, duration: 0.6 }}
+                                    transition={{ delay: 0.5, duration: 0.6 }}
                                 >
-                                    View Projects
+                                    <FaGithub size={20} /> {/* GitHub icon */}
+                                    Visit GitHub
                                 </motion.a>
                             </Link>
                         </div>
+
+
                     </motion.div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ const projects = [
         image: "/assets/crowdcube.png",
         link: "https://assginment-10-6b155.web.app",
         githubLink: "https://github.com/Mthe001/Crowd-Cube", 
-        tech: ["React.js", "Tailwind", "MongoDb"],
+        tech: ["React.js", "Tailwind", "MongoDb","GSAP","Embla Js"],
         className: "md:col-span-2 md:row-span-2",
     },
     {
@@ -40,7 +40,7 @@ const projects = [
         image: "/assets/bpldream.png",
         link: "https://verdant-churros-8bd07f.netlify.app/",
         githubLink: "https://github.com/Mthe001/Dream-Eleven-Xl", 
-        tech: ["React.Js", "Chart.js", "Tailwind", "Custom Hooks"],
+        tech: ["React.Js", "Chart.js", "Tailwind", "Javascript"],
         className: "md:col-span-2 md:row-span-2",
     },
     {
@@ -49,7 +49,7 @@ const projects = [
         image: "/assets/foundflow.png",
         link: "https://winter-clothing-donation-5e2c9.web.app",
         githubLink: "https://github.com/Mthe001/FounDFlow", 
-        tech: ["React Js", "Firebase", "Tailwind"],
+        tech: ["React Js", "Firebase", "Tailwind","embla Js","Mongodb",],
         className: "md:col-span-2 md:row-span-2",
     },
     {
@@ -58,14 +58,14 @@ const projects = [
         image: "/assets/marathon_240.png",
         link: "https://marathon-240.web.app",
         githubLink: "https://github.com/Mthe001/Marathon_240",
-        tech: ["React Js", "GSAP", "Motion", "Tailwind"],
+        tech: ["React Js", "GSAP", "Motion", "Tailwind","Node js","MongoDb","express js","Firebase"],
         className: "md:col-span-1 md:row-span-2",
     },
 ];
 
 const Showcase = () => {
     return (
-        <section id="projects" className="w-full py-16 md:py-24 bg-background">
+        <section id="projects" className="w-full min-h-screen py-16 md:py-24 bg-background">
             <div className="container mx-auto px-6 lg:px-12 text-center">
                 <motion.h2
                     className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground"
