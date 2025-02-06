@@ -75,10 +75,10 @@ I am a passionate front-end developer with a strong interest in building interac
 
 I would love to hear from you! Whether you’re looking to collaborate on a project, need help with web development, or just want to chat about the latest tech trends, feel free to reach out to me:
 
-- **Email**: [your.email@example.com](mailto:mtheredwanulhaque@gmail.com)
+- **Email**: [mtheredwqanulhaque@gmail.com](mailto:mtheredwanulhaque@gmail.com)
 
-- **Twitter**: [@your_handle](https://x.com/redwan_mahin68)
-- **GitHub**: [GitHub Profile](https://github.com/Mthe001)
+- **Twitter**: [@mahin68](https://x.com/redwan_mahin68)
+- **GitHub**: [GitHub](https://github.com/Mthe001)
 
 ---
 
