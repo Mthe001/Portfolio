@@ -98,9 +98,11 @@ const Navbar = () => {
                 <div className="hidden md:flex items-center space-x-4">
                     <ModeToggle />
                     
-                    <a href="https://drive.google.com/uc?export=download&id=1JAK_hvkFa2McIiWTCTmbrIBLPMh_UVzn" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                         Resume
+                    <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
+                        class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
+                        Resume
                     </a>
+
 
                 </div>
             </div>
@@ -148,9 +150,11 @@ const Navbar = () => {
                             <div className="flex items-center space-x-4">
                                 <ModeToggle />
     
-                                <a href="https://drive.google.com/uc?export=download&id=1JAK_hvkFa2McIiWTCTmbrIBLPMh_UVzn" target="_blank" class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                                 Resume
+                                <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
+                                    class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
+                                     Resume
                                 </a>
+
 
                             </div>
                         </div>
