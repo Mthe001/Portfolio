@@ -58,14 +58,6 @@ Find and adopt pets from various categories with ease. This is a fun pet adoptio
 
 ---
 
-## 🎨 **Designs**
-
-I also enjoy the design side of development and have created several UI designs and prototypes. Here are some of my best design works:
-
-- **[Project Management Dashboard](#)** – A sleek dashboard design for managing projects.
-- **[E-commerce Store UI](#)** – A modern and responsive e-commerce store layout.
-
----
 
 ## 💼 **About Me**
 
