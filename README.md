@@ -90,10 +90,5 @@ I would love to hear from you! Whether you’re looking to collaborate on a proj
 
 ---
 
-## 📜 **License**
-
-This portfolio is open-source and available under the [MIT License](LICENSE).
-
----
 
 Thank you for visiting my portfolio. Feel free to explore, and let's connect! 🚀
