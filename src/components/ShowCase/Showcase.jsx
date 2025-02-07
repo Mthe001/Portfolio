@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { InteractiveHoverButton } from "../interactive-hover-button";
+import { TextAnimate } from "../ui/text-animate";
 
 const projects = [
     {
@@ -68,12 +69,12 @@ const Showcase = () => {
         <section id="projects" className="w-full min-h-screen py-16 md:py-24 bg-background">
             <div className="container mx-auto px-6 lg:px-12 text-center">
                 <motion.h2
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground"
+                    className="text-3xl sm:text-4xl flex justify-center items-center md:text-5xl font-bold text-foreground"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    Project <span className="text-primary">Showcase</span>
+                    <TextAnimate animation="slideUp" by="character">Project </TextAnimate><span className="text-primary"><TextAnimate animation="slideLeft" by="character">Showcase</TextAnimate></span>
                 </motion.h2>
 
                 {/* Responsive Bento Grid Layout */}
