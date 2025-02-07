@@ -16,9 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mthe001",
-  description: "This what about im doing",
+  title: "Mthe001 | Frontend Developer",
+  description: "Passionate frontend developer crafting seamless, user-friendly web experiences with modern technologies.",
+  keywords: "Frontend Developer, Web Development, React, JavaScript, UI/UX, HTML, CSS",
+  author: "Mthe001",
 };
+
 
 export default function RootLayout({ children }) {
   return (
