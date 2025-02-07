@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
 import { TextAnimate } from "./ui/text-animate";
 import { motion, AnimatePresence } from "framer-motion";
+import { InteractiveHoverButton } from "./interactive-hover-button";
 
 const sections = [
     { name: "Home", id: "home" },
@@ -49,7 +50,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-background py-4 z-50 shadow-md">
+        <nav className="fixed top-0 left-0 w-full bg-background py-4 z-50 shadow-md border-2 border-gray-00 border-t-0 rounded-xl border-r-0 border-l-0">
             <div className="container mx-auto flex justify-between items-center px-6">
                 {/* Logo */}
                 <Link href="/">
@@ -99,11 +100,9 @@ const Navbar = () => {
                     <ModeToggle />
                     
                     <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
-                        class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                        Resume
+                        class="px-4 py-2 bg-primarytransition">
+                        <InteractiveHoverButton> Resume</InteractiveHoverButton>
                     </a>
-
-
                 </div>
             </div>
 
@@ -151,8 +150,8 @@ const Navbar = () => {
                                 <ModeToggle />
     
                                 <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
-                                    class="px-4 py-2 bg-primary text-white rounded-lg shadow-md hover:bg-primary-dark transition">
-                                     Resume
+                                    class="px-4 py-2  transition">
+                                    <InteractiveHoverButton>Resume</InteractiveHoverButton>
                                 </a>
 
 
