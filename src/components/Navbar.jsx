@@ -100,7 +100,7 @@ const Navbar = () => {
                     <ModeToggle />
                     
                     <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
-                        class="px-4 py-2 bg-primarytransition">
+                        className="px-4 py-2 bg-primarytransition">
                         <InteractiveHoverButton> Resume</InteractiveHoverButton>
                     </a>
                 </div>
@@ -150,7 +150,7 @@ const Navbar = () => {
                                 <ModeToggle />
     
                                 <a href="https://drive.google.com/uc?export=download&id=1B8rcvcpl8m4vD7W9kk0eOYk9zYKjcoqe"
-                                    class="px-4 py-2  transition">
+                                    className="px-4 py-2  transition">
                                     <InteractiveHoverButton>Resume</InteractiveHoverButton>
                                 </a>
 
