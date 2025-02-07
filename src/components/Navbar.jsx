@@ -56,7 +56,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-2 cursor-pointer">
                         <Image src="/assets/logo of my website.png" width={50} height={40} alt="Logo" />
                         <div className="text-primary text-2xl font-bold">
-                            <TextAnimate animation="slideLeft" by="character">MThe001</TextAnimate>
+                            <TextAnimate animation="slideUp" by="character">MThe001</TextAnimate>
                         </div>
                     </div>
                 </Link>

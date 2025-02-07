@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { FaCode, FaLaptopCode, FaLightbulb } from "react-icons/fa";
 import { TextAnimate } from "../ui/text-animate";
 import { Marquee } from "../ui/marquee";
+import animationData from "../../../public/animation.json";
+import Lottie from "lottie-react";
 
 // Hydration and client-specific logic fixes
 const About = () => {
@@ -72,33 +74,44 @@ const About = () => {
             <div className="container mx-auto px-6 lg:px-12 text-center">
                 {/* Section Title */}
                 <motion.h2
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground"
+                    className="text-3xl flex justify-center items-center gap-2 sm:text-4xl md:text-5xl font-bold text-foreground"
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    About <span className="text-primary">Me</span>
+                    <TextAnimate animation="slideUp" by="character">About</TextAnimate> <span className="text-primary">Me</span>
                 </motion.h2>
 
                 {/* Short Intro */}
+           
+                 
                 <motion.p
-                    className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto"
+                    className="mt-4 text-muted-foreground  text-sm max-w-3xl mx-auto px-4 sm:text-base md:text-lg lg:text-xl xl:text-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <div className="flex items-center gap-1 justify-center">
-                        <TextAnimate animation="slideLeft" by="character">I'm a passionate</TextAnimate>
-                            <TextAnimate className='text-primary' animation="slideLeft" by="character">Frontend Developer</TextAnimate>
+                    {/* First Section with Animated Text */}
+                    <div className="flex items-center gap-2 justify-center flex-wrap">
+                        <TextAnimate animation="slideLeft" by="character">
+                            I'm a passionate
+                        </TextAnimate>
+                        <TextAnimate className="text-primary" animation="slideLeft" by="character">
+                            Frontend Developer
+                        </TextAnimate>
                     </div>
+
+                    {/* Second Section with Animated Text */}
                     <TextAnimate animation="slideLeft" by="character">
-                        who loves solving problems, building scalable web applications, and crafting engage experiences.
+                        who loves solving problems, building scalable web applications, and crafting engaging experiences.
                     </TextAnimate>
                 </motion.p>
+
+
 
                 {/* Profile & Description */}
                 <motion.div
@@ -120,7 +133,7 @@ const About = () => {
                     <motion.div
                         className="mt-6 md:mt-0 md:ml-8 text-center md:text-left max-w-lg"
                     >
-                        <h3 className="lg:text-2xl md:text-xl text-md text-start font-bold text-primary">MD Redwanul Haque</h3>
+                        <h3 className="lg:text-2xl md:text-xl text-md text-start font-bold text-primary"> <TextAnimate animation="slideUp" by="character">Md Redwanul Haque</TextAnimate></h3>
                         <p className="mt-2 text-muted-foreground text-sm text-start  lg:text-lg">
                             I am currently a first-year intermediate student, passionate about technology and development.
                             After taking a brief gap year due to personal reasons, I am now fully committed to my learning journey.
@@ -145,7 +158,7 @@ const About = () => {
                         viewport={{ once: false, amount: 0.2 }}
                     >
                         <FaCode className="text-primary text-5xl mx-auto mb-4" />
-                        <h3 className="text-xl font-semibold">Coding Enthusiast</h3>
+                        <h3 className="text-xl font-semibold">Coding <span className="text-primary">Enthusiast</span></h3>
                         <p className="text-muted-foreground mt-2">
                             I love writing clean, efficient code and keeping up with the latest technologies.
                         </p>
@@ -160,12 +173,28 @@ const About = () => {
                         transition={{ delay: 0.4, duration: 0.6 }}
                         viewport={{ once: false, amount: 0.2 }}
                     >
-                        <FaLaptopCode className="text-primary text-5xl mx-auto mb-4" />
-                        <h3 className="text-xl font-semibold">Frontend Specialist</h3>
+                        {/* Lottie Animation */}
+                        <Lottie
+                            animationData={animationData}
+                            loop={true}
+                            style={{ width: 250, height: 200, margin: "0 auto" }}
+                        />
+                      
+
+                        {/* Title */}
+                        <h3 className="text-xl font-semibold">
+                            Frontend <span className="text-primary">Specialist</span>
+                        </h3>
+
+                        {/* Description */}
                         <p className="text-muted-foreground mt-2">
-                            Experience with **React, Next.js, Node.js, MongoDB, and Firebase**.
+                            Experience with <span className="text-primary">
+                                React, Next.js, Node.js, MongoDB, and Firebase
+                            </span>.
                         </p>
                     </motion.div>
+
+
 
                     {/* Problem Solver */}
                     <motion.div
@@ -177,9 +206,9 @@ const About = () => {
                         viewport={{ once: false, amount: 0.2 }}
                     >
                         <FaLightbulb className="text-primary text-5xl mx-auto mb-4" />
-                        <h3 className="text-xl font-semibold">Problem Solver</h3>
+                        <h3 className="text-xl font-semibold"><span className="text-red-400">Problem</span> Solver</h3>
                         <p className="text-muted-foreground mt-2">
-                            Passionate about **building scalable solutions** and **debugging complex issues**.
+                            Passionate about <span className="text-primary">building scalable solutions</span> and <span className="text-primary">debugging complex issues</span>.
                         </p>
                     </motion.div>
                 </div>
@@ -194,7 +223,7 @@ const About = () => {
                     transition={{ delay: 0.5, duration: 0.6 }}
                     viewport={{ once: false, amount: 0.2 }}
                 >
-                    <h3 className="text-2xl py-5 font-bold">Tech <span className="text-primary text-3xl">Stack</span></h3>
+                    <h3 className="text-2xl py-5 font-bold flex justify-center items-center"><TextAnimate animation="slideRight" by="character">Tech</TextAnimate><span className="text-primary text-3xl"><TextAnimate animation="slideUp" by="character">Stack</TextAnimate></span></h3>
                     <div className="relative flex lg:h-[500px] md:h-[400px] h-[310px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
                         <Marquee pauseOnHover className="[--duration:20s]">
                             {firstRow.map((review, index) => (

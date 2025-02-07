@@ -10,6 +10,7 @@ import { Particles } from "./ui/particles";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { InteractiveHoverButton } from "./interactive-hover-button";
 
 const Banner = () => {
     const slugs = [
@@ -117,7 +118,7 @@ const Banner = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        Hi, I'm <span className="text-primary">Redwan Mahin</span>
+                        <TextAnimate animation="slideUp" by="character">Hi, I'm </TextAnimate> <span className="text-primary"><TextAnimate animation="slideLeft" by="character">Redwan Mahin</TextAnimate></span>
                     </motion.h1>
 
                     {/* Description */}
@@ -151,14 +152,18 @@ const Banner = () => {
                             {/* Visit GitHub Button with GitHub Icon */}
                             <Link href="https://github.com/Mthe001" passHref> {/* Replace 'yourusername' with your GitHub username */}
                                 <motion.a
-                                    className="w-full md:w-auto flex items-center justify-center gap-2 px-6 py-3 text-lg border border-primary text-primary rounded-full shadow-md hover:bg-primary/10 transition text-center"
+                                    className="w-full md:w-auto flex items-center justify-center transition text-center"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 20 }}
                                     transition={{ delay: 0.5, duration: 0.6 }}
                                 >
-                                    <FaGithub size={20} /> {/* GitHub icon */}
-                                    Visit GitHub
+                                <InteractiveHoverButton>
+                                     <div className="flex justify-center gap-2 items-center">
+                                            <FaGithub size={30} /> {/* GitHub icon */}
+                                            Visit GitHub
+                                     </div>
+                                     </InteractiveHoverButton>
                                 </motion.a>
                             </Link>
                         </div>
